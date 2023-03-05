@@ -1,3 +1,19 @@
+nav {
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(to bottom, #333, #626262);
+  z-index: 10;
+}
 
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
