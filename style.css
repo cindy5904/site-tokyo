@@ -263,4 +263,25 @@ a {
   border-left: 1px solid #333;
 }
 
+.parallax {
+  width: 100%;
+  height: 300px;
+  background: url(ressources/parallax-large-flou.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.parallax p {
+  font-size: 65px;
+  color: #f1f1f1;
+}
+.parallax span {
+  display: block;
+  font-size: 25px;
+  color: #f1f1f1;
+}
+
 /*# sourceMappingURL=style.css.map */
