@@ -115,23 +115,152 @@ a {
 }
 
 @media (max-width: 700px) {
-  .logo-menu {
+  nav .logo-menu {
     display: block;
   }
-  .liste-nav {
+  nav .liste-nav {
     padding-top: 70px;
     flex-direction: column;
     height: auto;
     position: relative;
     display: none;
   }
-  .liste-nav.active {
+  nav .liste-nav .liste-nav.active {
     display: block;
   }
-  .item-nav {
+  nav .liste-nav .item-nav {
     height: 70px;
     justify-content: center;
   }
+  .accueil {
+    height: 650px;
+    min-height: auto;
+    background-position: right;
+  }
+  .accueil .logo-kyoto {
+    margin: 120px auto 0;
+  }
+  .accueil h1 {
+    font-size: 60px;
+  }
+  .accueil .sous-titre {
+    font-size: 23px;
+  }
+  .accueil .btn-accueil {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 15px auto 0;
+  }
+}
+.section-asymetrique {
+  display: grid;
+  grid-template: 200px repeat(3, auto)/1fr 600px 1fr;
+  background: #f1f1f1;
+}
+.section-asymetrique h2 {
+  grid-area: 1/1/2/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.section-asymetrique .bloc-1,
+.section-asymetrique .img-grid-1 {
+  grid-area: 2/2/3/3;
+}
+.section-asymetrique .bloc-right,
+.section-asymetrique .img-grid-2 {
+  grid-area: 3/2/4/3;
+}
+.section-asymetrique .bloc-3,
+.section-asymetrique .img-grid-3 {
+  grid-area: 4/2/5/3;
+}
+.section-asymetrique .bloc {
+  background: #333;
+  color: #f1f1f1;
+  position: relative;
+  border-radius: 2px;
+  height: 750px;
+  margin-bottom: 250px;
+}
+.section-asymetrique .bloc button {
+  border-radius: 9999px;
+  outline: none;
+  border: none;
+  background: crimson;
+  border: 1px solid #333;
+  color: #f1f1f1;
+  padding: 20px 35px;
+  font-size: 20px;
+  margin: 35px auto;
+  cursor: pointer;
+  display: block;
+}
+.section-asymetrique .img-grid {
+  width: 500px;
+  height: 700px;
+  object-fit: cover;
+  position: relative;
+}
+.section-asymetrique .img-grid-1,
+.section-asymetrique .img-grid-3 {
+  top: 130px;
+  left: 20px;
+}
+.section-asymetrique .bloc-left {
+  left: -300px;
+}
+.section-asymetrique .bloc-left .bloc-txt-left {
+  width: 50%;
+  height: 100%;
+}
+.section-asymetrique .bloc-left .bloc-txt-left h3 {
+  white-space: nowrap;
+  font-size: 35px;
+  margin: 30px 15px;
+}
+.section-asymetrique .bloc-left .bloc-txt-left p {
+  line-height: 40px;
+  padding: 15px;
+}
+.section-asymetrique .bloc-right {
+  right: -300px;
+}
+.section-asymetrique .bloc-right .bloc-txt-right {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+.section-asymetrique .bloc-right .bloc-txt-right h3 {
+  position: relative;
+  font-size: 35px;
+  margin: 30px 15px;
+}
+.section-asymetrique .bloc-right .bloc-txt-right p {
+  line-height: 40px;
+  padding: 15px;
+}
+.section-asymetrique .bloc-right .bloc-txt-right button {
+  margin: 5px auto;
+}
+.section-asymetrique .img-grid-2 {
+  top: 130px;
+  left: 100px;
+}
+.section-asymetrique .ligne-gauche {
+  grid-area: 1/2/-1/3;
+  border-left: 1px solid #333;
+}
+.section-asymetrique .ligne-droite {
+  grid-area: 1/3/-1/4;
+  border-left: 1px solid #333;
 }
 
 /*# sourceMappingURL=style.css.map */

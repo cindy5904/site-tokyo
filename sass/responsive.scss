@@ -1,4 +1,5 @@
-@include mobile {
+@include tablette {
+   nav {
     .logo-menu {
         display: block;
     }
@@ -8,12 +9,37 @@
         height: auto;
         position: relative;
         display: none;
+        .liste-nav.active {
+            display: block;
+        }
+        .item-nav {
+            height: 70px;
+            justify-content: center;
+        }
     }
-    .liste-nav.active {
-        display: block;
-    }
-    .item-nav {
-        height: 70px;
-        justify-content: center;
-    }
+   }
+   .accueil {
+        
+        height: 650px;
+        min-height: auto;
+        background-position: right;
+        .logo-kyoto {
+            margin: 120px auto 0;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        .sous-titre {
+            font-size: 23px;
+        }
+        .btn-accueil {
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 18px;
+            margin: 15px auto 0;
+        }
+    
+   }
+   
 }
