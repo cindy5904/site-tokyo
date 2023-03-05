@@ -125,12 +125,12 @@ a {
     position: relative;
     display: none;
   }
-  nav .liste-nav .liste-nav.active {
-    display: block;
-  }
   nav .liste-nav .item-nav {
     height: 70px;
     justify-content: center;
+  }
+  nav .liste-nav.active {
+    display: block;
   }
   .accueil {
     height: 650px;
@@ -152,6 +152,15 @@ a {
     line-height: 50px;
     font-size: 18px;
     margin: 15px auto 0;
+  }
+  .section-asymetrique {
+    grid-template: 150px repeat(6, auto) 100px/100%;
+  }
+  .section-asymetrique h2 {
+    font-size: 30px;
+  }
+  .section-asymetrique .ligne-gauche, .section-asymetrique .ligne-droite {
+    display: none;
   }
 }
 .section-asymetrique {
@@ -282,6 +291,158 @@ a {
   display: block;
   font-size: 25px;
   color: #f1f1f1;
+}
+
+.section-tarifs {
+  padding-bottom: 150px;
+  border-bottom: 1px dashed #333;
+}
+.section-tarifs h3 {
+  text-align: center;
+  font-size: 45px;
+  margin: 120px 0 20px;
+  padding: 0 30px;
+}
+.section-tarifs hr {
+  width: 200px;
+  margin: 20px auto 100px;
+}
+.section-tarifs .container-tarifs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.section-tarifs .container-tarifs .cartes-tarifs {
+  width: 350px;
+  height: auto;
+  border-radius: 5px;
+  margin: 15px 15px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.section-tarifs .container-tarifs .cartes-tarifs:hover {
+  transform: translateY(-5px);
+}
+.section-tarifs .container-tarifs h4 {
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 35px;
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
+  background: #ffafbf;
+}
+.section-tarifs .container-tarifs span {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.section-tarifs .container-tarifs p {
+  font-size: 18px;
+  padding: 20px 10px;
+  border-top: 1px solid rgb(194, 197, 194);
+}
+.section-tarifs .container-tarifs p:last-of-type {
+  border-bottom: 1px solid rgb(194, 197, 194);
+}
+.section-tarifs .container-tarifs p:nth-child(odd) {
+  background: rgba(195, 195, 195, 0.219);
+}
+.section-tarifs .container-tarifs a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #333;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 9999px;
+  color: #333;
+  font-size: 18px;
+  line-height: 50px;
+  margin: 20px auto;
+  transition: all 0.2s ease-in-out;
+}
+.section-tarifs .container-tarifs a:hover {
+  background: #333;
+  color: #f1f1f1;
+}
+
+.section-contact {
+  padding-bottom: 100px;
+}
+.section-contact h2 {
+  text-align: center;
+  color: #333;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  padding: 70px 0 0 0;
+}
+.section-contact .container-form {
+  margin: 0 auto;
+  width: 70%;
+}
+.section-contact .container-form .form-groupe {
+  position: relative;
+  margin-bottom: 45px;
+}
+.section-contact .container-form .form-groupe label {
+  color: #aaa;
+  font-size: 20px;
+}
+.section-contact .container-form .form-groupe input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  color: #666;
+  font-size: 20px;
+}
+.section-contact .container-form .form-groupe textarea {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border: 3px solid #aaa;
+  border-radius: 3px;
+  padding: 5px;
+  resize: none;
+  outline: none;
+  font-size: 20px;
+  background: #f1f1f1;
+}
+.section-contact .container-form .form-groupe .button-sub {
+  display: block;
+  width: auto;
+  padding: 15px 60px;
+  border: 3px solid rgb(144, 144, 144);
+  border-radius: 9999px;
+  background-image: linear-gradient(to right, transparent 50%, rgb(65, 65, 65) 50%, rgb(134, 134, 134));
+  background-size: 200%;
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.section-contact .container-form .form-groupe .form-groupe .button-sub:hover {
+  color: #fff;
+  background-position: 100%;
+  border: 3px solid #fff;
+}
+.section-contact .form-groupe:nth-child(4) {
+  margin-bottom: 25px;
+}
+
+footer {
+  border-top: 1px solid #333;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
