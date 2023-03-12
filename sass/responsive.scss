@@ -43,7 +43,11 @@
         }
     
    }
-   .section-asymetrique {
+  
+   
+}
+@include mobile{
+    .section-asymetrique {
         grid-template: 150px repeat(6, auto) 100px / 100%;
         h2 {
             font-size: 30px;
@@ -51,7 +55,87 @@
         .ligne-gauche, .ligne-droite {
             display: none;
         }
+        .bloc-1 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+        .img-grid-1 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+    
+        .bloc-right {
+            grid-area: 4 / 2 / 5 / 3;
+        }
+        .img-grid-2 {
+            grid-area: 5 / 2 / 6 / 3;
+        }
+    
+        .bloc-3 {
+            grid-area: 6 / 2 / 7 / 3;
+        }
+        .img-grid-3 {
+            grid-area: 7 / 2 / 8 / 3;
+        }
+    
+        .bloc {
+            height: 100%;
+            margin-bottom: 0px;
+            button {
+                font-size: 20px;
+                padding: 15px 30px;
+                margin-bottom: 30px;
+            }
+        }
+    
+        .img-grid {
+            position: static;
+            width: 600px;
+            height: 750px;
+        }
+    
+        .img-grid-1,
+        .img-grid-3 {
+            top: 0px;
+            left: 0px;
+        }
+        .img-grid-2 {
+            top: 0px;
+            left: 0px;
+        }
+        .bloc-left {
+            left: 0px;
+            .bloc-txt-left {
+                width: 100%;
+                height: 100%;
+                h3 {
+                    text-align: center;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 1.8;
+                    padding: 15px;
+                }
+            }
+        }
+        
+        .bloc-right {
+            right: 0px;
+            .bloc-txt-right {
+                position: static;
+                width: 100%;
+                height: 100%;
+                h3{
+                    text-align: center;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 1.8;
+                    padding: 15px;
+                }
+            }
+            
+        }
+
+        
 
     }
-   
 }
